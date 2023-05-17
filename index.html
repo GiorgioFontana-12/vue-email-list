@@ -10,8 +10,13 @@
     <title>EmailList</title>
 </head>
 <body>
-    <div id="app">{{emails}}</div>
+    <div id="app">
 
+        <ul v-if="emails.length == 9">
+            <li v-for="mail in emails">{{mail}}</li>
+        </ul>
+        
+    </div>
 
 
 
